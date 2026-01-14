@@ -7,7 +7,7 @@ export default function Header() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   return (
-    <header className="w-full p-4 border-b bg-white">
+    <header className="w-full p-4 border-b border-gray-300/50 bg-white">
       <nav className="flex items-center">
         <Image src="/alesAnimations.svg" alt="Ales Animations Logo" width={50} height={50} />
         <h1 className="text-xl font-bold"><span className="text-blue-500">Ales</span><span className="text-indigo-500">Animations</span></h1>
