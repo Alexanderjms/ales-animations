@@ -11,8 +11,8 @@ export default function AnimationsLayout({
       <Header />
       <div className="flex h-[calc(100vh-65px)]">
         <Sidebar />
-        <main className="flex-1 p-2 overflow-auto">
-          <div className="bg-white rounded-lg shadow-sm p-6 min-h-full">
+        <main className="flex-1 overflow-auto">
+          <div className="bg-white shadow-sm p-3 min-h-full">
             {children}
           </div>
         </main>
