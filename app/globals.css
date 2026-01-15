@@ -24,3 +24,71 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes bounce-diag-tl {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-12%, -12%);
+  }
+}
+
+@keyframes bounce-diag-tr {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(12%, -12%);
+  }
+}
+
+@keyframes bounce-diag-bl {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-12%, 12%);
+  }
+}
+
+@keyframes bounce-diag-br {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(12%, 12%);
+  }
+}
+
+.animate-bounce-diag-tl:hover {
+  animation: bounce-diag-tl 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+.animate-bounce-diag-tr:hover {
+  animation: bounce-diag-tr 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+.animate-bounce-diag-bl:hover {
+  animation: bounce-diag-bl 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+.animate-bounce-diag-br:hover {
+  animation: bounce-diag-br 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+@keyframes flash {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: var(--flash-min-opacity, 0.2);
+  }
+}
+
+.group:hover .flash-on-hover {
+  animation-name: flash;
+  animation-duration: var(--flash-duration, 600ms);
+  animation-iteration-count: var(--flash-count, 1);
+  animation-timing-function: ease-in-out;
+}

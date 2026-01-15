@@ -14,61 +14,61 @@ export default function FadeInPage() {
     { 
       id: "fade-in", 
       name: "Fade In", 
-      code: "f-i", 
+      code: "fi", 
       description: "Simple opacity transition" 
     },
     { 
       id: "fade-in-up", 
       name: "Fade In Up", 
-      code: "f-i-up", 
+      code: "fi-up", 
       description: "Fade in with upward movement" 
     },
     { 
       id: "fade-in-down", 
       name: "Fade In Down", 
-      code: "f-i-down", 
+      code: "fi-down", 
       description: "Fade in with downward movement" 
     },
     { 
       id: "fade-in-left", 
       name: "Fade In Left", 
-      code: "f-i-left", 
+      code: "fi-left", 
       description: "Fade in from left side" 
     },
     { 
       id: "fade-in-right", 
       name: "Fade In Right", 
-      code: "f-i-right", 
+      code: "fi-right", 
       description: "Fade in from right side" 
     },
     { 
       id: "fade-in-scale", 
       name: "Fade In Scale", 
-      code: "f-i-scale", 
+      code: "fi-scale", 
       description: "Fade in with scale effect" 
     },
     { 
       id: "fade-in-top-left", 
       name: "Fade In Top Left", 
-      code: "f-i-tl", 
+      code: "fi-tl", 
       description: "Fade in from top-left corner" 
     },
     { 
       id: "fade-in-top-right", 
       name: "Fade In Top Right", 
-      code: "f-i-tr", 
+      code: "fi-tr", 
       description: "Fade in from top-right corner" 
     },
     { 
       id: "fade-in-bottom-left", 
       name: "Fade In Bottom Left", 
-      code: "f-i-bl", 
+      code: "fi-bl", 
       description: "Fade in from bottom-left corner" 
     },
     { 
       id: "fade-in-bottom-right", 
       name: "Fade In Bottom Right", 
-      code: "f-i-br", 
+      code: "fi-br", 
       description: "Fade in from bottom-right corner" 
     }
   ];
@@ -219,7 +219,7 @@ export default function FadeInPage() {
             <h3 className="font-semibold text-sm text-gray-800 mb-2">Quick Info</h3>
             <div className="space-y-2 text-xs text-gray-600">
               <div><span className="font-medium">Class:</span> <code className="bg-gray-100 px-1 rounded">{currentVariant.code}</code></div>
-              <div><span className="font-medium">Duration:</span> <code className="bg-gray-100 px-1 rounded">d-{duration}</code></div>
+              <div><span className="font-medium">Duration:</span> <code className="bg-gray-100 px-1 rounded">{duration} ms</code></div>
               <div><span className="font-medium">Type:</span> {currentVariant.description}</div>
             </div>
           </div>
