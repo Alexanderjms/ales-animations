@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "../animated.css";
 
 :root {
   --background: #ffffff;
@@ -108,4 +109,17 @@ body {
   animation-duration: var(--flash-duration, 600ms);
   animation-iteration-count: var(--flash-count, 1);
   animation-timing-function: ease-in-out;
+}
+
+.flip-on-hover {
+  backface-visibility: visible;
+  transform-style: preserve-3d;
+}
+
+.group:hover .flip-on-hover {
+  animation-name: var(--flip-name, flip);
+  animation-duration: var(--flip-duration, 700ms);
+  animation-iteration-count: var(--flip-count, 1);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
 }

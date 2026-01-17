@@ -34,7 +34,7 @@ export default function PulsesPage() {
   const getPulseSettings = (variant: string): PulseSettings => {
     switch (variant) {
       case "pulse-fast":
-        return { durationFactor: 0.3, count: 1, scale: 1.4 };
+        return { durationFactor: 0.6, count: 1, scale: 1.4 };
       case "pulse-slow":
         return { durationFactor: 2, count: 1, scale: 1.4 };
       case "pulse-twice":
@@ -48,7 +48,7 @@ export default function PulsesPage() {
         case "pulse-infinity":
         return { durationFactor: 1, count: 999, scale: 1.4 };
       default:
-        return { durationFactor: 0.3, count: 1, scale: 1.4 };
+        return { durationFactor: 1, count: 1, scale: 1.4 };
     }
   };
 
