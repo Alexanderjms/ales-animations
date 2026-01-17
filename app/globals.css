@@ -95,6 +95,14 @@ body {
   animation-fill-mode: both;
 }
 
+.pulse-on-hover:hover {
+  animation-name: pulse;
+  animation-duration: var(--pulse-duration, 600ms);
+  animation-iteration-count: var(--pulse-count, 1);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
 @keyframes flash {
   0%, 100% {
     opacity: 1;
@@ -111,6 +119,49 @@ body {
   animation-timing-function: ease-in-out;
 }
 
+.flash-on-hover:hover {
+  animation-name: flash;
+  animation-duration: var(--flash-duration, 600ms);
+  animation-iteration-count: var(--flash-count, 1);
+  animation-timing-function: ease-in-out;
+}
+
+.group:hover .zoom-on-hover {
+  animation-name: var(--zoom-name, zoomIn);
+  animation-duration: var(--zoom-duration, 600ms);
+  animation-iteration-count: var(--zoom-count, 1);
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  animation-fill-mode: both;
+  opacity: 1 !important;
+}
+
+.group:hover .slide-on-hover {
+  animation-name: var(--slide-name, slideInUp);
+  animation-duration: var(--slide-duration, 600ms);
+  animation-iteration-count: var(--slide-count, 1);
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  animation-fill-mode: both;
+  opacity: 1 !important;
+}
+
+.slide-on-hover:hover {
+  animation-name: var(--slide-name, slideInUp);
+  animation-duration: var(--slide-duration, 600ms);
+  animation-iteration-count: var(--slide-count, 1);
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  animation-fill-mode: both;
+  opacity: 1 !important;
+}
+
+.zoom-on-hover:hover {
+  animation-name: var(--zoom-name, zoomIn);
+  animation-duration: var(--zoom-duration, 600ms);
+  animation-iteration-count: var(--zoom-count, 1);
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  animation-fill-mode: both;
+  opacity: 1 !important;
+}
+
 .flip-on-hover {
   backface-visibility: visible;
   transform-style: preserve-3d;
@@ -122,4 +173,5 @@ body {
   animation-iteration-count: var(--flip-count, 1);
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
+  opacity: 1 !important;
 }

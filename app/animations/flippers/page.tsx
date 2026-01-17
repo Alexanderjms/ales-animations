@@ -3,7 +3,6 @@
 import { useState } from "react";
 import TitleComponents from "@/app/components/components-ui/tittle-components";
 import CodeBlock from "@/app/components/components-ui/code-block";
-import StickyNote from "@/app/components/components-ui/sticky-note";
 import AnimationCard from "@/app/components/components-ui/animation-card";
 
 type FlipSettings = {
@@ -117,7 +116,6 @@ export default function FlippersPage() {
 
 			<div className="lg:col-span-4 block">
 				<div className="mt-29 flex flex-col gap-4">
-					<StickyNote text={currentVariant.name} />
 					<div className="bg-white rounded-xl p-4 shadow-sm border border-gray-200">
 						<h3 className="font-semibold text-sm text-gray-800 mb-2">Quick Info</h3>
 						<div className="space-y-2 text-xs text-gray-600">
@@ -127,7 +125,7 @@ export default function FlippersPage() {
 							</div>
 							<div>
 								<span className="font-medium">Duration:</span>{" "}
-								<code className="bg-gray-100 px-1 rounded">d-{duration}</code>
+								<code className="bg-gray-100 px-1 rounded">{duration} ms</code>
 							</div>
 							<div>
 								<span className="font-medium">Type:</span> {currentVariant.description}

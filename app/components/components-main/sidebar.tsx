@@ -19,6 +19,9 @@ export default function Sidebar() {
     { href: '/animations/flashes', label: 'Flashes' },
     { href: '/animations/pulses', label: 'Pulses' },
     { href: '/animations/flippers', label: 'Flippers' },
+    { href: '/animations/zooms', label: 'Zooms' },
+
+
   ];
 
   return (

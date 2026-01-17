@@ -3,7 +3,6 @@
 import { useState } from "react";
 import TitleComponents from "@/app/components/components-ui/tittle-components";
 import CodeBlock from "@/app/components/components-ui/code-block";
-import StickyNote from "@/app/components/components-ui/sticky-note";
 import AnimationCard from "@/app/components/components-ui/animation-card";
 
 export default function FadeInPage() {
