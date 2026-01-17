@@ -77,6 +77,23 @@ body {
   animation: bounce-diag-br 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
 }
 
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(var(--pulse-scale, 1.1));
+  }
+}
+
+.group:hover .pulse-on-hover {
+  animation-name: pulse;
+  animation-duration: var(--pulse-duration, 600ms);
+  animation-iteration-count: var(--pulse-count, 1);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
 @keyframes flash {
   0%, 100% {
     opacity: 1;
