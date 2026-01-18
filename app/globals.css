@@ -176,6 +176,113 @@ body {
   opacity: 1 !important;
 }
 
+.group:hover .rotate-on-hover {
+  animation-name: var(--rotate-name, rotateIn);
+  animation-duration: var(--rotate-duration, 600ms);
+  animation-iteration-count: var(--rotate-count, 1);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  opacity: 1 !important;
+}
+
+.rotate-on-hover:hover {
+  animation-name: var(--rotate-name, rotateIn);
+  animation-duration: var(--rotate-duration, 600ms);
+  animation-iteration-count: var(--rotate-count, 1);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  opacity: 1 !important;
+}
+
+.group:hover .back-entrance-on-hover {
+  animation-name: var(--back-name, backInDown);
+  animation-duration: var(--back-duration, 600ms);
+  animation-iteration-count: var(--back-count, 1);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  opacity: 1 !important;
+}
+
+.back-entrance-on-hover:hover {
+  animation-name: var(--back-name, backInDown);
+  animation-duration: var(--back-duration, 600ms);
+  animation-iteration-count: var(--back-count, 1);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  opacity: 1 !important;
+}
+
+.group:hover .back-exit-on-hover {
+  animation-name: var(--back-name, backOutDown);
+  animation-duration: var(--back-duration, 600ms);
+  animation-iteration-count: var(--back-count, 1);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  opacity: 1 !important;
+}
+
+.back-exit-on-hover:hover {
+  animation-name: var(--back-name, backOutDown);
+  animation-duration: var(--back-duration, 600ms);
+  animation-iteration-count: var(--back-count, 1);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  opacity: 1 !important;
+}
+
+.group:hover .lightspeed-on-hover {
+  animation-name: var(--ls-name, lightSpeedInRight);
+  animation-duration: var(--ls-duration, 600ms);
+  animation-iteration-count: var(--ls-count, 1);
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  opacity: 1 !important;
+}
+
+.lightspeed-on-hover:hover {
+  animation-name: var(--ls-name, lightSpeedInRight);
+  animation-duration: var(--ls-duration, 600ms);
+  animation-iteration-count: var(--ls-count, 1);
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  opacity: 1 !important;
+}
+
+.group:hover .shake-on-hover {
+  animation-name: var(--shake-name, shakeX);
+  animation-duration: var(--shake-duration, 600ms);
+  animation-iteration-count: var(--shake-count, 1);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+.shake-on-hover:hover {
+  animation-name: var(--shake-name, shakeX);
+  animation-duration: var(--shake-duration, 600ms);
+  animation-iteration-count: var(--shake-count, 1);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+/* Shorthand Classes for Shakes */
+.sh-x { --shake-name: shakeX; }
+.sh-y { --shake-name: shakeY; }
+.sh { --shake-name: shake; }
+.h-sh { --shake-name: headShake; }
+.swing { --shake-name: swing; }
+.tada { --shake-name: tada; }
+.rb { --shake-name: rubberBand; }
+.jello { --shake-name: jello; }
+.wobble { --shake-name: wobble; }
+.hb { --shake-name: heartBeat; }
+
+@keyframes shake {
+  from, to { transform: translate3d(0, 0, 0); }
+  10%, 30%, 50%, 70%, 90% { transform: translate3d(-10px, 0, 0); }
+  20%, 40%, 60%, 80% { transform: translate3d(10px, 0, 0); }
+}
+
+/* Custom Scrollbars */
 .sidebar-scroll::-webkit-scrollbar {
   width: 6px;
 }
