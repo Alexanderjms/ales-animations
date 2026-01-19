@@ -26,7 +26,6 @@ export default function Sidebar() {
     { href: '/animations/wobble', label: 'Wobble' },
     { href: '/animations/glitch', label: 'Glitch' },
     { href: '/animations/reveal', label: 'Reveal' },
-    { href: '/animations/3d-transforms', label: '3D Transforms' },
     { href: '/animations/svg-path', label: 'SVG Path' },
     { href: '/animations/text-effects', label: 'Text Effects' },
     { href: '/animations/backgrounds', label: 'Backgrounds' },
